@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: Avtan88/manual-app
+  tag: "9"
+  pullPolicy: Always
+
+service:
+  type: NodePort
+  port: 3000
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 3
+

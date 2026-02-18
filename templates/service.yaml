@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: manual-app
+spec:
+  type: {{ .Values.service.type }}
+  selector:
+    app: manual-app
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: 3000
+

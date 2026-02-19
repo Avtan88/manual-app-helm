@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: avtan1/manual-app
-  tag: "9"
+  tag: '13'
   pullPolicy: Always
 
 service:
